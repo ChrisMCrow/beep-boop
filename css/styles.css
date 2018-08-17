@@ -1,5 +1,21 @@
 body {
   font-family: courier;
+  background-color: #C00000;
+  background-image: url(../img/retro-robot.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 90% 100%;
+  background-size: 48%;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  border: 8px double black;
+  box-shadow: 5px 5px;
+  padding: 10px 30px;
+  font-size: 50px;
+  text-align: center;
+  background-color: #BAA;
 }
 
 .output {
