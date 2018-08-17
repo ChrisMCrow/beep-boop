@@ -5,6 +5,7 @@
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Peralta" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Atomic+Age" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="css/Bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -16,7 +17,7 @@
   <body>
     <div class="container">
       <h1 class="jumbotron animated slideInDown">Robot Number Translator</h1>
-      <form id="nameInput"class="animated slideInLeft">
+      <form id="enterName" class="animated slideInLeft">
         <div class="form-group">
           <label for="enterName">Input your Name:</label><br>
           <input id="nameInput" type="text"><br>
@@ -28,11 +29,13 @@
           <label for="numberInput">Input a Number:</label><br>
           <input id="numberInput" type="number"><br>
           <button type="submit" class="btn btn-dark">Output</button>
-          <button id="clear" class="btn btn-warning">Clear</button>
+          <button id="reverse" class="btn btn-warning">Reverse</button>
+          <button id="clear" class="btn btn-light">Clear</button>
         </div>
         <div class="output">
           <p>Output:</p>
-          <div class="numberOutput animated slideInDown"></div>
+          <div class="numberOutput animated slideInDown">
+          </div>
         </div>
       </form>
     </div>
