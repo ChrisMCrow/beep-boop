@@ -25,6 +25,21 @@ button {
   letter-spacing: 2px;
 }
 
+button#rules {
+  font-family: sans-serif;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.modal {
+  font-size: 18px;
+}
+
+.modal-header {
+  font-size: 20px;
+  background-color: #C00000;
+}
+
 .numberOutput {
   display: none;
   font-family: 'Press Start 2P', courier;
