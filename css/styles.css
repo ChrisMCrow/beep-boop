@@ -5,13 +5,13 @@ body {
   background-image: url(../img/retro-robot.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 90% 100%;
+  background-position: 100% 100%;
   background-size: 48%;
 }
 
 .jumbotron {
   margin-top: 30px;
-  border: 8px double black;
+  border: 8px solid black;
   box-shadow: 8px 8px;
   padding: 10px 30px;
   font-size: 50px;
@@ -28,6 +28,7 @@ button {
 .numberOutput {
   display: none;
   font-family: 'Press Start 2P', courier;
+  box-shadow: 8px 8px;
   font-size: 20px;
   border: 5px double #C5E1D8;
   width: 575px;
@@ -37,4 +38,5 @@ button {
 
 .smallText {
   font-size: 12px;
+  background-color: #FFC200;
 }

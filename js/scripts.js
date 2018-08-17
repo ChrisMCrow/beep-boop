@@ -2,7 +2,7 @@
 var name = "Dave"
 
 function beepFunction(input) {
-  numbers = []
+  var numbers = []
   for (i = 0; i <= input; i++) {
     if (i % 3 === 0 && i != 0) {
       numbers.push("<br> <em class='smallText'>I'm sorry, " + name + ". I'm afraid I can't do that.</em>");
@@ -30,6 +30,7 @@ $(document).ready(function() {
     event.preventDefault();
     var numberInput = parseInt($("#numberInput").val());
     var numberOutput = beepFunction(numberInput);
+    $("#clear").addClass("animated flash infinite")
     $(".numberOutput").html(numberOutput + "<br>");
     $("div.numberOutput").slideDown();
   });
@@ -40,12 +41,14 @@ $(document).ready(function() {
     var numberOutputArray = beepFunction(numberInput).split("<br>");
     var reverseArray = numberOutputArray.reverse();
     var reverseOuput = reverseArray.join("<br>");
+    $("#clear").addClass("animated flash infinite")
     $(".numberOutput").html("<br>" + reverseOuput);
     $("div.numberOutput").slideDown();
   });
 
   $("button#clear").click(function(event) {
     event.preventDefault();
+    $("#clear").removeClass("animated flash infinite")
     $("div.numberOutput").slideUp();
   });
 });
