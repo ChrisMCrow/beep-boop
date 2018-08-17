@@ -1,6 +1,6 @@
 //business logic
 function beepFunction(input) {
-  if (input === "1") {
+  if (input.includes("1")) {
     return "<em>Boop!</em>";
   } else if (input.includes("0")) {
     return "<em>Beep!</em>";
