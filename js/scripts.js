@@ -1,6 +1,6 @@
 //business logic
 function beepFunction(input) {
-  if (input === "3") {
+  if (parseInt(input) % 3 === 0) {
     return "<em>I'm sorry, Dave. I'm afraid I can't do that.</em>"
   } else if (input.includes("1")) {
     return "<em>Boop!</em>";
@@ -8,7 +8,6 @@ function beepFunction(input) {
     return "<em>Beep!</em>";
   } else {
     number = parseInt(input)
-    console.log("else " + number)
     return number;
   }
 };
