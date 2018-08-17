@@ -1,6 +1,8 @@
 //business logic
 function beepFunction(input) {
-  if (input.includes("0")) {
+  if (input === "1") {
+    return "<em>Boop!</em>";
+  } else if (input.includes("0")) {
     return "<em>Beep!</em>";
   } else {
     number = parseInt(input)
