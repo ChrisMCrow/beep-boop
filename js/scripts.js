@@ -1,4 +1,6 @@
 //business logic
+var name = ""
+
 function beepFunction(input) {
   numbers = []
   for (i = 0; i <= input; i++) {
@@ -17,9 +19,23 @@ function beepFunction(input) {
 
 //user interface logic
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("#enterName").submit(function(event) {
+    event.preventDefault();
+    var name = $("#nameInput").val();
+    $("form#enterName").hide();
+    console.log(name);
+    $("form#enterNumber").show();
+  });
+
+  $("#enterNumber").submit(function(event) {
     event.preventDefault();
     var numberInput = parseInt($("#numberInput").val());
     $(".numberOutput").html(beepFunction(numberInput));
+    $("div.numberOutput").show();
+  });
+
+  $("button#clear").click(function(event) {
+    event.preventDefault();
+    $("div.numberOutput").hide();
   });
 });
